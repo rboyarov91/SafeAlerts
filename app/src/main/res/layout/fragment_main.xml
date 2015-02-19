@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="safe alerts"
+        android:id="@+id/textView"
+        android:gravity="center_horizontal"
+        android:textSize="40sp" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/alarmImageButton"
+        android:background="#80FFFFFF"
+
+        android:scaleType="centerInside"
+        android:src="@drawable/alertbutton"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:id="@+id/bottomToolBarLinearLayout"
+        android:background="#ff13fffd"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/alarmLinearLayout">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/alarmToolBarImageView"
+                android:src="@drawable/ic_action_alarm_add"
+                android:scaleType="centerInside" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="alarm \ncontacts"
+                android:id="@+id/alarmToolBarTextView"
+                android:paddingTop="8dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:paddingBottom="8dp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/locationLinearLayout">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/locationToolBarImageView"
+                android:src="@drawable/ic_action_add_location"
+
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="location \nalerts"
+                android:id="@+id/locationToolBarTextView"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/settingsLinearLayout"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/settingsToolBarImageView"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_action_settings"
+                android:contentDescription="location alerts" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="settings"
+                android:id="@+id/settingsToolBarTextView"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
